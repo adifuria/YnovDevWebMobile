@@ -24,6 +24,11 @@ var app = {
       this.onDeviceReady.bind(this),
       false
     );
+    window.addEventListener("load", () => {
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("service-worker.js");
+      }
+    });
   },
 
   // deviceready Event Handler
