@@ -32,7 +32,9 @@ var app = {
   // 'pause', 'resume', etc.
   onDeviceReady: function () {
     deviceReady();
+    
   },
+  
 };
 
 app.initialize();
