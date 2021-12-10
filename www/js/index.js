@@ -30,7 +30,9 @@ var app = {
   //
   // Bind any cordova events here. Common events are:
   // 'pause', 'resume', etc.
-  onDeviceReady: function () {},
+  onDeviceReady: function () {
+    console.log(device.platform);
+  },
 };
 
 app.initialize();
